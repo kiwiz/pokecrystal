@@ -43,10 +43,10 @@ HealPartyMon:
 	dec bc
 	dec bc
 
-	ld a, [hli]
+	xor a
 	ld [bc], a
 	inc bc
-	ld a, [hl]
+	inc a
 	ld [bc], a
 
 	farcall RestoreAllPP
