@@ -292,7 +292,7 @@ LookAtElmPokeBallScript:
 ElmsLabHealingMachine:
 	opentext
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-	iftrue .CanHeal
+	nop_3
 	writetext ElmsLabHealingMachineText1
 	waitbutton
 	closetext
