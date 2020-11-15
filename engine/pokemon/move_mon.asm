@@ -679,9 +679,9 @@ SendGetMonIntoFromBox:
 	jr z, .egg
 	inc hl
 	inc hl
-	ld a, [hli]
+	xor a
 	ld [de], a
-	ld a, [hl]
+	inc a
 	inc de
 	ld [de], a
 	jr .CloseSRAM_And_ClearCarryFlag
