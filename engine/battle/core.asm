@@ -2378,8 +2378,7 @@ WinTrainerBattle:
 	jr nz, .skip_win_loss_text
 	call PrintWinLossText
 .skip_win_loss_text
-
-	jp .give_money
+	jp .done
 
 .mobile
 	call BattleWinSlideInEnemyTrainerFrontpic
@@ -2461,8 +2460,12 @@ WinTrainerBattle:
 	jp StdBattleTextbox
 
 .KeepItAll:
-	ld hl, GotMoneyForWinningText
-	jp StdBattleTextbox
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
 
 .AddMoneyToMom:
 	push bc
