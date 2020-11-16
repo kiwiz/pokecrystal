@@ -1062,3 +1062,8 @@ ENDM
 checksave: MACRO
 	db checksave_command
 ENDM
+
+nop_3: MACRO
+	db checkevent_command
+	dw EVENT_DUMMY
+ENDM
